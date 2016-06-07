@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B35E191D06E0CD005C78A5 /* TableKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E181D06E0CD005C78A5 /* TableKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E201D06E0CD005C78A5 /* TableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B35E151D06E0CD005C78A5 /* TableKit.framework */; };
+		13B35E251D06E0CD005C78A5 /* TableKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E241D06E0CD005C78A5 /* TableKitTests.m */; };
+		13B35E311D06E221005C78A5 /* FFKTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E2F1D06E221005C78A5 /* FFKTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E321D06E221005C78A5 /* FFKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E301D06E221005C78A5 /* FFKTableViewController.m */; };
+		13B35E3B1D06E231005C78A5 /* FFKTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E331D06E231005C78A5 /* FFKTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E3C1D06E231005C78A5 /* FFKTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E341D06E231005C78A5 /* FFKTableController.m */; };
+		13B35E3D1D06E231005C78A5 /* FFKTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E351D06E231005C78A5 /* FFKTableSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E3E1D06E231005C78A5 /* FFKTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E361D06E231005C78A5 /* FFKTableSection.m */; };
+		13B35E3F1D06E231005C78A5 /* FFKTableRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E371D06E231005C78A5 /* FFKTableRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E401D06E231005C78A5 /* FFKTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E381D06E231005C78A5 /* FFKTableRow.m */; };
+		13B35E411D06E231005C78A5 /* FFKTableInteraction.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E391D06E231005C78A5 /* FFKTableInteraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E421D06E231005C78A5 /* FFKTableInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E3A1D06E231005C78A5 /* FFKTableInteraction.m */; };
+		13B35E461D06E241005C78A5 /* NSArray+FFKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E441D06E241005C78A5 /* NSArray+FFKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E471D06E241005C78A5 /* NSArray+FFKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E451D06E241005C78A5 /* NSArray+FFKUtils.m */; };
+		13B35E531D06E25B005C78A5 /* FFKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E491D06E25B005C78A5 /* FFKTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E541D06E25B005C78A5 /* FFKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E4A1D06E25B005C78A5 /* FFKTableViewCell.m */; };
+		13B35E551D06E25B005C78A5 /* FFKSubtitleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E4B1D06E25B005C78A5 /* FFKSubtitleTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E561D06E25B005C78A5 /* FFKSubtitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E4C1D06E25B005C78A5 /* FFKSubtitleTableViewCell.m */; };
+		13B35E571D06E25B005C78A5 /* FFKValue1TableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E4D1D06E25B005C78A5 /* FFKValue1TableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E581D06E25B005C78A5 /* FFKValue1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E4E1D06E25B005C78A5 /* FFKValue1TableViewCell.m */; };
+		13B35E591D06E25B005C78A5 /* FFKValue2TableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E4F1D06E25B005C78A5 /* FFKValue2TableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E5A1D06E25B005C78A5 /* FFKValue2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E501D06E25B005C78A5 /* FFKValue2TableViewCell.m */; };
+		13B35E5B1D06E25B005C78A5 /* FFKFeatureTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E511D06E25B005C78A5 /* FFKFeatureTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B35E5C1D06E25B005C78A5 /* FFKFeatureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E521D06E25B005C78A5 /* FFKFeatureTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13B35E211D06E0CD005C78A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13B35E0C1D06E0CD005C78A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B35E141D06E0CD005C78A5;
+			remoteInfo = TableKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13B35E151D06E0CD005C78A5 /* TableKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B35E181D06E0CD005C78A5 /* TableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableKit.h; sourceTree = "<group>"; };
+		13B35E1A1D06E0CD005C78A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13B35E1F1D06E0CD005C78A5 /* TableKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B35E241D06E0CD005C78A5 /* TableKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableKitTests.m; sourceTree = "<group>"; };
+		13B35E261D06E0CD005C78A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13B35E2F1D06E221005C78A5 /* FFKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKTableViewController.h; sourceTree = "<group>"; };
+		13B35E301D06E221005C78A5 /* FFKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKTableViewController.m; sourceTree = "<group>"; };
+		13B35E331D06E231005C78A5 /* FFKTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKTableController.h; sourceTree = "<group>"; };
+		13B35E341D06E231005C78A5 /* FFKTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKTableController.m; sourceTree = "<group>"; };
+		13B35E351D06E231005C78A5 /* FFKTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKTableSection.h; sourceTree = "<group>"; };
+		13B35E361D06E231005C78A5 /* FFKTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKTableSection.m; sourceTree = "<group>"; };
+		13B35E371D06E231005C78A5 /* FFKTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKTableRow.h; sourceTree = "<group>"; };
+		13B35E381D06E231005C78A5 /* FFKTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKTableRow.m; sourceTree = "<group>"; };
+		13B35E391D06E231005C78A5 /* FFKTableInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKTableInteraction.h; sourceTree = "<group>"; };
+		13B35E3A1D06E231005C78A5 /* FFKTableInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKTableInteraction.m; sourceTree = "<group>"; };
+		13B35E441D06E241005C78A5 /* NSArray+FFKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FFKUtils.h"; sourceTree = "<group>"; };
+		13B35E451D06E241005C78A5 /* NSArray+FFKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FFKUtils.m"; sourceTree = "<group>"; };
+		13B35E491D06E25B005C78A5 /* FFKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKTableViewCell.h; sourceTree = "<group>"; };
+		13B35E4A1D06E25B005C78A5 /* FFKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKTableViewCell.m; sourceTree = "<group>"; };
+		13B35E4B1D06E25B005C78A5 /* FFKSubtitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKSubtitleTableViewCell.h; sourceTree = "<group>"; };
+		13B35E4C1D06E25B005C78A5 /* FFKSubtitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKSubtitleTableViewCell.m; sourceTree = "<group>"; };
+		13B35E4D1D06E25B005C78A5 /* FFKValue1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKValue1TableViewCell.h; sourceTree = "<group>"; };
+		13B35E4E1D06E25B005C78A5 /* FFKValue1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKValue1TableViewCell.m; sourceTree = "<group>"; };
+		13B35E4F1D06E25B005C78A5 /* FFKValue2TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKValue2TableViewCell.h; sourceTree = "<group>"; };
+		13B35E501D06E25B005C78A5 /* FFKValue2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKValue2TableViewCell.m; sourceTree = "<group>"; };
+		13B35E511D06E25B005C78A5 /* FFKFeatureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKFeatureTableViewCell.h; sourceTree = "<group>"; };
+		13B35E521D06E25B005C78A5 /* FFKFeatureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKFeatureTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B35E111D06E0CD005C78A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B35E1C1D06E0CD005C78A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B35E201D06E0CD005C78A5 /* TableKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B35E0B1D06E0CD005C78A5 = {
+			isa = PBXGroup;
+			children = (
+				13B35E171D06E0CD005C78A5 /* TableKit */,
+				13B35E231D06E0CD005C78A5 /* TableKitTests */,
+				13B35E161D06E0CD005C78A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13B35E161D06E0CD005C78A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B35E151D06E0CD005C78A5 /* TableKit.framework */,
+				13B35E1F1D06E0CD005C78A5 /* TableKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13B35E171D06E0CD005C78A5 /* TableKit */ = {
+			isa = PBXGroup;
+			children = (
+				13B35E181D06E0CD005C78A5 /* TableKit.h */,
+				13B35E5E1D06E43F005C78A5 /* View Controllers */,
+				13B35E431D06E234005C78A5 /* Models */,
+				13B35E5D1D06E263005C78A5 /* Cells */,
+				13B35E481D06E244005C78A5 /* Utils */,
+				13B35E1A1D06E0CD005C78A5 /* Info.plist */,
+			);
+			path = TableKit;
+			sourceTree = "<group>";
+		};
+		13B35E231D06E0CD005C78A5 /* TableKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				13B35E241D06E0CD005C78A5 /* TableKitTests.m */,
+				13B35E261D06E0CD005C78A5 /* Info.plist */,
+			);
+			path = TableKitTests;
+			sourceTree = "<group>";
+		};
+		13B35E431D06E234005C78A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13B35E331D06E231005C78A5 /* FFKTableController.h */,
+				13B35E341D06E231005C78A5 /* FFKTableController.m */,
+				13B35E351D06E231005C78A5 /* FFKTableSection.h */,
+				13B35E361D06E231005C78A5 /* FFKTableSection.m */,
+				13B35E371D06E231005C78A5 /* FFKTableRow.h */,
+				13B35E381D06E231005C78A5 /* FFKTableRow.m */,
+				13B35E391D06E231005C78A5 /* FFKTableInteraction.h */,
+				13B35E3A1D06E231005C78A5 /* FFKTableInteraction.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		13B35E481D06E244005C78A5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				13B35E441D06E241005C78A5 /* NSArray+FFKUtils.h */,
+				13B35E451D06E241005C78A5 /* NSArray+FFKUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		13B35E5D1D06E263005C78A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				13B35E491D06E25B005C78A5 /* FFKTableViewCell.h */,
+				13B35E4A1D06E25B005C78A5 /* FFKTableViewCell.m */,
+				13B35E4B1D06E25B005C78A5 /* FFKSubtitleTableViewCell.h */,
+				13B35E4C1D06E25B005C78A5 /* FFKSubtitleTableViewCell.m */,
+				13B35E4D1D06E25B005C78A5 /* FFKValue1TableViewCell.h */,
+				13B35E4E1D06E25B005C78A5 /* FFKValue1TableViewCell.m */,
+				13B35E4F1D06E25B005C78A5 /* FFKValue2TableViewCell.h */,
+				13B35E501D06E25B005C78A5 /* FFKValue2TableViewCell.m */,
+				13B35E511D06E25B005C78A5 /* FFKFeatureTableViewCell.h */,
+				13B35E521D06E25B005C78A5 /* FFKFeatureTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		13B35E5E1D06E43F005C78A5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13B35E2F1D06E221005C78A5 /* FFKTableViewController.h */,
+				13B35E301D06E221005C78A5 /* FFKTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13B35E121D06E0CD005C78A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B35E591D06E25B005C78A5 /* FFKValue2TableViewCell.h in Headers */,
+				13B35E3B1D06E231005C78A5 /* FFKTableController.h in Headers */,
+				13B35E311D06E221005C78A5 /* FFKTableViewController.h in Headers */,
+				13B35E551D06E25B005C78A5 /* FFKSubtitleTableViewCell.h in Headers */,
+				13B35E531D06E25B005C78A5 /* FFKTableViewCell.h in Headers */,
+				13B35E461D06E241005C78A5 /* NSArray+FFKUtils.h in Headers */,
+				13B35E411D06E231005C78A5 /* FFKTableInteraction.h in Headers */,
+				13B35E571D06E25B005C78A5 /* FFKValue1TableViewCell.h in Headers */,
+				13B35E191D06E0CD005C78A5 /* TableKit.h in Headers */,
+				13B35E5B1D06E25B005C78A5 /* FFKFeatureTableViewCell.h in Headers */,
+				13B35E3F1D06E231005C78A5 /* FFKTableRow.h in Headers */,
+				13B35E3D1D06E231005C78A5 /* FFKTableSection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		13B35E141D06E0CD005C78A5 /* TableKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B35E291D06E0CD005C78A5 /* Build configuration list for PBXNativeTarget "TableKit" */;
+			buildPhases = (
+				13B35E101D06E0CD005C78A5 /* Sources */,
+				13B35E111D06E0CD005C78A5 /* Frameworks */,
+				13B35E121D06E0CD005C78A5 /* Headers */,
+				13B35E131D06E0CD005C78A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableKit;
+			productName = TableKit;
+			productReference = 13B35E151D06E0CD005C78A5 /* TableKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13B35E1E1D06E0CD005C78A5 /* TableKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B35E2C1D06E0CD005C78A5 /* Build configuration list for PBXNativeTarget "TableKitTests" */;
+			buildPhases = (
+				13B35E1B1D06E0CD005C78A5 /* Sources */,
+				13B35E1C1D06E0CD005C78A5 /* Frameworks */,
+				13B35E1D1D06E0CD005C78A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13B35E221D06E0CD005C78A5 /* PBXTargetDependency */,
+			);
+			name = TableKitTests;
+			productName = TableKitTests;
+			productReference = 13B35E1F1D06E0CD005C78A5 /* TableKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13B35E0C1D06E0CD005C78A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Founders Factory";
+				TargetAttributes = {
+					13B35E141D06E0CD005C78A5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					13B35E1E1D06E0CD005C78A5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 13B35E0F1D06E0CD005C78A5 /* Build configuration list for PBXProject "TableKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13B35E0B1D06E0CD005C78A5;
+			productRefGroup = 13B35E161D06E0CD005C78A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B35E141D06E0CD005C78A5 /* TableKit */,
+				13B35E1E1D06E0CD005C78A5 /* TableKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B35E131D06E0CD005C78A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B35E1D1D06E0CD005C78A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B35E101D06E0CD005C78A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B35E471D06E241005C78A5 /* NSArray+FFKUtils.m in Sources */,
+				13B35E541D06E25B005C78A5 /* FFKTableViewCell.m in Sources */,
+				13B35E3C1D06E231005C78A5 /* FFKTableController.m in Sources */,
+				13B35E561D06E25B005C78A5 /* FFKSubtitleTableViewCell.m in Sources */,
+				13B35E5A1D06E25B005C78A5 /* FFKValue2TableViewCell.m in Sources */,
+				13B35E421D06E231005C78A5 /* FFKTableInteraction.m in Sources */,
+				13B35E321D06E221005C78A5 /* FFKTableViewController.m in Sources */,
+				13B35E581D06E25B005C78A5 /* FFKValue1TableViewCell.m in Sources */,
+				13B35E3E1D06E231005C78A5 /* FFKTableSection.m in Sources */,
+				13B35E5C1D06E25B005C78A5 /* FFKFeatureTableViewCell.m in Sources */,
+				13B35E401D06E231005C78A5 /* FFKTableRow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B35E1B1D06E0CD005C78A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B35E251D06E0CD005C78A5 /* TableKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13B35E221D06E0CD005C78A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B35E141D06E0CD005C78A5 /* TableKit */;
+			targetProxy = 13B35E211D06E0CD005C78A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13B35E271D06E0CD005C78A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13B35E281D06E0CD005C78A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13B35E2A1D06E0CD005C78A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TableKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.foundersfactory.TableKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		13B35E2B1D06E0CD005C78A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TableKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.foundersfactory.TableKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		13B35E2D1D06E0CD005C78A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TableKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.foundersfactory.TableKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13B35E2E1D06E0CD005C78A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TableKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.foundersfactory.TableKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B35E0F1D06E0CD005C78A5 /* Build configuration list for PBXProject "TableKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B35E271D06E0CD005C78A5 /* Debug */,
+				13B35E281D06E0CD005C78A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B35E291D06E0CD005C78A5 /* Build configuration list for PBXNativeTarget "TableKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B35E2A1D06E0CD005C78A5 /* Debug */,
+				13B35E2B1D06E0CD005C78A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13B35E2C1D06E0CD005C78A5 /* Build configuration list for PBXNativeTarget "TableKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B35E2D1D06E0CD005C78A5 /* Debug */,
+				13B35E2E1D06E0CD005C78A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13B35E0C1D06E0CD005C78A5 /* Project object */;
+}
