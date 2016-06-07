@@ -27,7 +27,6 @@ FOUNDATION_EXPORT const unsigned char TableKitVersionString[];
 #import <TableKit/FFKSubtitleTableViewCell.h>
 #import <TableKit/FFKValue1TableViewCell.h>
 #import <TableKit/FFKValue2TableViewCell.h>
-#import <TableKit/FFKFeatureTableViewCell.h>
 
 // Utils
 #import <TableKit/NSArray+FFKUtils.h>

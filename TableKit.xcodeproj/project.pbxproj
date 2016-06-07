@@ -30,8 +30,6 @@
 		13B35E581D06E25B005C78A5 /* FFKValue1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E4E1D06E25B005C78A5 /* FFKValue1TableViewCell.m */; };
 		13B35E591D06E25B005C78A5 /* FFKValue2TableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E4F1D06E25B005C78A5 /* FFKValue2TableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13B35E5A1D06E25B005C78A5 /* FFKValue2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E501D06E25B005C78A5 /* FFKValue2TableViewCell.m */; };
-		13B35E5B1D06E25B005C78A5 /* FFKFeatureTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B35E511D06E25B005C78A5 /* FFKFeatureTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13B35E5C1D06E25B005C78A5 /* FFKFeatureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B35E521D06E25B005C78A5 /* FFKFeatureTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +69,6 @@
 		13B35E4E1D06E25B005C78A5 /* FFKValue1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKValue1TableViewCell.m; sourceTree = "<group>"; };
 		13B35E4F1D06E25B005C78A5 /* FFKValue2TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKValue2TableViewCell.h; sourceTree = "<group>"; };
 		13B35E501D06E25B005C78A5 /* FFKValue2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKValue2TableViewCell.m; sourceTree = "<group>"; };
-		13B35E511D06E25B005C78A5 /* FFKFeatureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFKFeatureTableViewCell.h; sourceTree = "<group>"; };
-		13B35E521D06E25B005C78A5 /* FFKFeatureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFKFeatureTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +165,6 @@
 				13B35E4E1D06E25B005C78A5 /* FFKValue1TableViewCell.m */,
 				13B35E4F1D06E25B005C78A5 /* FFKValue2TableViewCell.h */,
 				13B35E501D06E25B005C78A5 /* FFKValue2TableViewCell.m */,
-				13B35E511D06E25B005C78A5 /* FFKFeatureTableViewCell.h */,
-				13B35E521D06E25B005C78A5 /* FFKFeatureTableViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -200,7 +194,6 @@
 				13B35E411D06E231005C78A5 /* FFKTableInteraction.h in Headers */,
 				13B35E571D06E25B005C78A5 /* FFKValue1TableViewCell.h in Headers */,
 				13B35E191D06E0CD005C78A5 /* TableKit.h in Headers */,
-				13B35E5B1D06E25B005C78A5 /* FFKFeatureTableViewCell.h in Headers */,
 				13B35E3F1D06E231005C78A5 /* FFKTableRow.h in Headers */,
 				13B35E3D1D06E231005C78A5 /* FFKTableSection.h in Headers */,
 			);
@@ -311,7 +304,6 @@
 				13B35E321D06E221005C78A5 /* FFKTableViewController.m in Sources */,
 				13B35E581D06E25B005C78A5 /* FFKValue1TableViewCell.m in Sources */,
 				13B35E3E1D06E231005C78A5 /* FFKTableSection.m in Sources */,
-				13B35E5C1D06E25B005C78A5 /* FFKFeatureTableViewCell.m in Sources */,
 				13B35E401D06E231005C78A5 /* FFKTableRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +486,7 @@
 				13B35E2B1D06E0CD005C78A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13B35E2C1D06E0CD005C78A5 /* Build configuration list for PBXNativeTarget "TableKitTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +495,7 @@
 				13B35E2E1D06E0CD005C78A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
