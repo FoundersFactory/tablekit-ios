@@ -7,6 +7,11 @@
 //
 
 #import "FFKTableViewCell.h"
+#import <TableKit/TableKit.h>
+
+@interface FFKTableViewCell ()
+
+@end
 
 @implementation FFKTableViewCell
 
@@ -26,7 +31,9 @@
 {
     for (UIView *subview in self.subviews) {
         
-        if (subview != self.contentView) {
+        // We're assuming every other subview on the cell is a seperator...¯\_(ツ)_/¯
+        if (self.contentView != subview && self.backgroundView != subview && self.selectedBackgroundView != subview) {
+            
             if (seperatorsHidden) {
                 subview.alpha = 0.0;
             } else {
@@ -34,13 +41,23 @@
             }
         }
     }
+    
+    _seperatorsHidden = seperatorsHidden;
 }
 
 - (void)prepareForReuse
 {
     [super prepareForReuse];
-    
-    self.seperatorsHidden = NO;
 }
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+
+    // A total hack. Prepare for reuse isn't called AFTER an additional dividing line has been added to the first cell in the section
+    self.seperatorsHidden = _seperatorsHidden;
+}
+
+
 
 @end

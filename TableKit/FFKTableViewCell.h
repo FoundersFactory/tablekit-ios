@@ -10,6 +10,9 @@
 
 @interface FFKTableViewCell : UITableViewCell
 
+/**
+ Set whether a seperator should be displayed for a specific cell.
+ */
 @property (nonatomic, assign) BOOL seperatorsHidden;
 
 @end
