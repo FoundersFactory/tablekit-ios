@@ -54,6 +54,11 @@
 @property (nonatomic, assign) CGFloat height;
 
 /**
+ The indexPath of the row in the tableview once it has been assigned to a section.
+ */
+@property (readonly, strong) NSIndexPath *indexPath;
+
+/**
  Fired if a user performs an interaction on the cell.
  */
 @property (nonatomic, strong) void (^interactionHandler)(FFKTableInteraction *interaction);

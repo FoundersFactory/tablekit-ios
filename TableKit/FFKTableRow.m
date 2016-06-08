@@ -20,4 +20,9 @@
     return row;
 }
 
+- (void)setIndexPath:(NSIndexPath *)indexPath
+{
+    _indexPath = indexPath;
+}
+
 @end

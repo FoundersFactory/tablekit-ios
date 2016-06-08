@@ -9,6 +9,12 @@
 #import "FFKTableController.h"
 #import "TableKit.h"    
 
+@interface FFKTableRow (Private)
+
+- (void)setIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
 @interface FFKTableController ()
 
 @property (readonly, strong) NSMutableArray *registeredCellClasses;
@@ -28,6 +34,22 @@
     }
     
     return self;
+}
+
+- (void)setTableSections:(NSArray *)tableSections
+{
+    [self willChangeValueForKey:@"tableSections"];
+    
+    // Assign indexPaths
+    [tableSections enumerateObjectsUsingBlock:^(FFKTableSection *section, NSUInteger sectionIndex, BOOL * _Nonnull stop) {
+        [section.rows enumerateObjectsUsingBlock:^(FFKTableRow *row, NSUInteger rowIndex, BOOL * _Nonnull stop) {
+            row.indexPath = [NSIndexPath indexPathForRow:rowIndex inSection:sectionIndex];
+        }];
+    }];
+    
+    _tableSections = tableSections;
+    
+    [self didChangeValueForKey:@"tableSections"];
 }
 
 #pragma mark - Data Source
