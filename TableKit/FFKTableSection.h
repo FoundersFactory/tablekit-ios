@@ -6,7 +6,7 @@
 //  Copyright © 2016 Founders Factory. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class FFKTableInteraction;
 
@@ -26,6 +26,9 @@
  The rows to be contained within the section. Rows represent cells in the tableview.
  */
 @property (nonatomic, strong) NSArray *rows;
+
+@property (nonatomic, assign) CGFloat headerHeight;
+@property (nonatomic, assign) CGFloat footerHeight;
 
 /**
  Fired if a user performs an interaction on a cell within the section, such as a tap. Only called if the row doesn't have its own interaction handler.

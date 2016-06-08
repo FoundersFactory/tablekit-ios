@@ -244,4 +244,18 @@
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)sectionIndex
+{
+    FFKTableSection *section = self.tableSections[sectionIndex];
+
+    return section.headerHeight;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)sectionIndex
+{
+    FFKTableSection *section = self.tableSections[sectionIndex];
+    
+    return section.footerHeight;
+}
+
 @end
