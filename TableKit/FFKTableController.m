@@ -248,14 +248,22 @@
 {
     FFKTableSection *section = self.tableSections[sectionIndex];
 
-    return section.headerHeight;
+    if (section.headerHeight == 0) {
+        return UITableViewAutomaticDimension;
+    } else {
+        return section.headerHeight;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)sectionIndex
 {
     FFKTableSection *section = self.tableSections[sectionIndex];
     
-    return section.footerHeight;
+    if (section.footerHeight == 0) {
+        return UITableViewAutomaticDimension;
+    } else {
+        return section.footerHeight;
+    }
 }
 
 @end
