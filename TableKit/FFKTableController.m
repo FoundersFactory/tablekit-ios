@@ -223,7 +223,7 @@
         
         CGFloat maxY = view.frame.size.height + view.frame.origin.y;
         
-        if (maxY > greatestY) {
+        if (maxY > greatestY && !view.hidden) {
             greatestY = maxY;
         }
         
