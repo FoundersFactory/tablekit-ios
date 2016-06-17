@@ -31,6 +31,9 @@
         _tableView = tableView;
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
+        
+        _registeredCellClasses = [NSMutableArray new];
+        _proxyCells = [NSMutableDictionary new];
     }
     
     return self;
@@ -199,6 +202,7 @@
     
     if (!cell) {
         cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:NSStringFromClass(cellClass)];
+        self.proxyCells[reuseIdentifier] = cell;
     }
     
     return cell;
