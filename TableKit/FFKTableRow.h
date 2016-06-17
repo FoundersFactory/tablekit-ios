@@ -53,6 +53,10 @@
  */
 @property (nonatomic, assign) CGFloat height;
 
+@property (nonatomic, assign) CGFloat minHeight;
+
+@property (nonatomic, assign) UIEdgeInsets layoutMargins;
+
 /**
  The indexPath of the row in the tableview once it has been assigned to a section.
  */

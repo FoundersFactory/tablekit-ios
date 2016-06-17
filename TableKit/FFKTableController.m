@@ -129,6 +129,10 @@
         
         CGFloat height = [self automaticCellHeightForIndexPath:indexPath];
         
+        if (height < row.minHeight) {
+            return row.minHeight;
+        }
+        
         if (height < 44) {
             height = 44;
         }
@@ -212,8 +216,10 @@
 {
     // Configure a proxy instance of the row's cell
     FFKTableViewCell *proxyCell = [self dequeueProxyCellForIndexPath:indexPath];
-    proxyCell.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, 1);
+    proxyCell.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, 44);
     [self configureCell:proxyCell forIndexPath:indexPath];
+    FFKTableSection *section = self.tableSections[indexPath.section];
+    FFKTableRow *row = section.rows[indexPath.row];
     
     // Force cell to layout
     [proxyCell layoutSubviews];
@@ -236,7 +242,10 @@
         }
     }
     
+    
     height = greatestY + fabs(lowestY);
+
+    height = height + row.layoutMargins.top + row.layoutMargins.bottom;
     
     return height;
 }

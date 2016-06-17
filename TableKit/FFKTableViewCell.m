@@ -21,7 +21,6 @@
         
         self.textLabel.numberOfLines = 0;
         self.detailTextLabel.numberOfLines = 0;
-        
     }
     
     return self;
