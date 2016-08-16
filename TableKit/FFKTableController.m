@@ -73,8 +73,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"cellForRowAtIndexPath");
-    
     // Get current row and section
     FFKTableSection *section = self.tableSections[indexPath.section];
     FFKTableRow *row = section.rows[indexPath.row];
