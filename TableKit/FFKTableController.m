@@ -19,6 +19,7 @@
 
 @property (readonly, strong) NSMutableArray *registeredCellClasses;
 @property (readonly, strong) NSMutableDictionary *proxyCells;
+@property (readonly, strong) NSMutableDictionary *cachedCellInfo;
 
 @end
 
@@ -34,6 +35,7 @@
         
         _registeredCellClasses = [NSMutableArray new];
         _proxyCells = [NSMutableDictionary new];
+        _cachedCellInfo = [NSMutableDictionary new];
     }
     
     return self;
@@ -71,6 +73,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"cellForRowAtIndexPath");
+    
     // Get current row and section
     FFKTableSection *section = self.tableSections[indexPath.section];
     FFKTableRow *row = section.rows[indexPath.row];
@@ -214,6 +218,24 @@
 
 - (CGFloat)automaticCellHeightForIndexPath:(NSIndexPath *)indexPath
 {
+    FFKTableControllerCachedCellInfo *cachedInfo = self.cachedCellInfo[indexPath];
+    
+    if (!cachedInfo) {
+        
+        return [self calculateAutomaticCellHeightForIndexPath:indexPath];
+        
+    } else if (!CGRectEqualToRect(cachedInfo.tableViewFrame, self.tableView.frame)) {
+        
+        return [self calculateAutomaticCellHeightForIndexPath:indexPath];
+        
+    } else {
+        
+        return cachedInfo.cellHeight;
+    }
+}
+
+- (CGFloat)calculateAutomaticCellHeightForIndexPath:(NSIndexPath *)indexPath
+{
     // Configure a proxy instance of the row's cell
     FFKTableViewCell *proxyCell = [self dequeueProxyCellForIndexPath:indexPath];
     proxyCell.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, 44);
@@ -242,12 +264,28 @@
         }
     }
     
-    
     height = greatestY + fabs(lowestY);
-
+    
     height = height + row.layoutMargins.top + row.layoutMargins.bottom;
     
+    FFKTableControllerCachedCellInfo *cellInfo = [FFKTableControllerCachedCellInfo new];
+    cellInfo.tableViewFrame = self.tableView.frame;
+    cellInfo.cellHeight = height;
+    
+    self.cachedCellInfo[indexPath] = cellInfo;
+    
     return height;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FFKTableControllerCachedCellInfo *cachedInfo = self.cachedCellInfo[indexPath];
+
+    if (cachedInfo) {
+        return cachedInfo.cellHeight;
+    } else {
+        return 88;
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -278,5 +316,10 @@
         return section.footerHeight;
     }
 }
+
+@end
+
+@implementation FFKTableControllerCachedCellInfo
+
 
 @end

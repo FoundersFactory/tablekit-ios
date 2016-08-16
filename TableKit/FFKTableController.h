@@ -34,3 +34,10 @@
 
 
 @end
+
+@interface FFKTableControllerCachedCellInfo : NSObject
+
+@property (nonatomic, assign) CGRect tableViewFrame;
+@property (nonatomic, assign) CGFloat cellHeight;
+
+@end
