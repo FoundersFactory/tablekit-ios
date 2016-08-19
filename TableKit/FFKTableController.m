@@ -237,13 +237,13 @@
     // Configure a proxy instance of the row's cell
     FFKTableViewCell *proxyCell = [self dequeueProxyCellForIndexPath:indexPath];
     proxyCell.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, 44);
+
     [self configureCell:proxyCell forIndexPath:indexPath];
+    // Force cell to layout
+    [proxyCell layoutSubviews];
+    
     FFKTableSection *section = self.tableSections[indexPath.section];
     FFKTableRow *row = section.rows[indexPath.row];
-    
-    // Force cell to layout
-    proxyCell.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, 44);
-    [proxyCell layoutSubviews];
     
     CGFloat height = self.tableView.rowHeight;
     CGFloat greatestY = 0;
@@ -251,7 +251,7 @@
     
     // Go through each subview and find view with greatest and lowest y & height values
     for (UIView *view in proxyCell.contentView.subviews) {
-                
+        
         CGFloat maxY = view.frame.size.height + view.frame.origin.y;
         
         if (maxY > greatestY && !view.hidden) {
@@ -271,7 +271,7 @@
     cellInfo.cellHeight = height;
     
     self.cachedCellInfo[indexPath] = cellInfo;
-    
+        
     return height;
 }
 
