@@ -57,6 +57,26 @@
     self.seperatorsHidden = _seperatorsHidden;
 }
 
+- (void)setNeedsHeightRecalculation
+{
+    // There needs to be a better way to do this, maybe a delegate, but for now assume this will be a table view
+    UITableView *tableView = (UITableView *)self.superview.superview;
+    
+    if ([tableView isKindOfClass:[UITableView class]]) {
+        
+        // Invalidate internal cache
+        id tableController = tableView.delegate;
+        
+        if ([tableController respondsToSelector:@selector(invalidateCachedCellInfoAtIndexPath:)]) {
+            
+            // This will force heightForRowAtIndexPath: to be called
+            [tableView beginUpdates];
+            [tableController invalidateCachedCellInfoAtIndexPath:self.currentIndexPath];
+            [tableView endUpdates];
+        }
+    }
+}
+
 
 
 @end

@@ -15,4 +15,11 @@
  */
 @property (nonatomic, assign) BOOL seperatorsHidden;
 
+/**
+ The index path of which the cell is currently displayed at.
+ */
+@property (nonatomic, strong) NSIndexPath *currentIndexPath;
+
+- (void)setNeedsHeightRecalculation;
+
 @end

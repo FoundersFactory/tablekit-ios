@@ -81,11 +81,19 @@
     NSString *cellClassName = NSStringFromClass(row.cellClass);
     
     if (![self.registeredCellClasses containsObject:cellClassName]) {
+    
+        if (![row.cellClass isSubclassOfClass:[FFKTableViewCell class]]) {
+            
+            [NSException raise:@"Cell is not subclass of FFKTableViewCell" format:@"A UITableView that is managed by an FFKTableController must only use cell classes that are subclasses of FFKTableViewCell. The cell %@ is not a subclass of FFKTableViewCell", cellClassName];
+        }
+        
         [self.registeredCellClasses addObject:cellClassName];
         [self.tableView registerClass:row.cellClass forCellReuseIdentifier:cellClassName];
     }
     
     FFKTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellClassName forIndexPath:indexPath];
+    cell.currentIndexPath = indexPath;
+
     [self configureCell:cell forIndexPath:indexPath];
     
     return cell;
@@ -313,6 +321,11 @@
     } else {
         return section.footerHeight;
     }
+}
+
+- (void)invalidateCachedCellInfoAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.cachedCellInfo removeObjectForKey:indexPath];
 }
 
 @end

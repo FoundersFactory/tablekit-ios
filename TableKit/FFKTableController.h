@@ -32,6 +32,7 @@
  */
 - (void)reloadDirtyRowsWithAnimation:(UITableViewRowAnimation)animation;
 
+- (void)invalidateCachedCellInfoAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
